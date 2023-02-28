@@ -1,6 +1,6 @@
 /**
  * @filename init.js
- * @description server, db코드를 통합하여 최종적으로 실행하는 파일
+ * @description 최종적으로 실행하는 파일
  * @author 장진호
  */
 

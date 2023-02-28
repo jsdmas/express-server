@@ -43,7 +43,6 @@ class DBPool {
             const oldQuery = connection.query;
 
             // db query요청을 가로채고 log기록 후 SQL을 수행하도록 재정의
-
             connection.query = function (...args) {
                 // arguments 객체는 배열이 아니기 때문에 Array객체의 slice() 같은 배열의 메소드를 사용할 수 없으나 apply() 메소드를 이용하면 가능하다.
                 const queryCmd = oldQuery.apply(connection, args);

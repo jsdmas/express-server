@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 // json, text 이해하기 위해 아래와 같이 작성.
 app.use(express.json());
 app.use(express.text());
-// 다른 도메인주소끼리 ajax요청 주고받을 때 필요.
+// 다른 도메인주소끼리 요청 주고받을 때 필요.
 app.use(cors());
 // express로 put, delete를 사용하기위해 설정
 app.use(methodOverride());
